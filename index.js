@@ -1,34 +1,7 @@
 /**
- * @file
- * <a href="https://travis-ci.org/Xotic750/is-finite-x"
- * title="Travis status">
- * <img
- * src="https://travis-ci.org/Xotic750/is-finite-x.svg?branch=master"
- * alt="Travis status" height="18">
- * </a>
- * <a href="https://david-dm.org/Xotic750/is-finite-x"
- * title="Dependency status">
- * <img src="https://david-dm.org/Xotic750/is-finite-x.svg"
- * alt="Dependency status" height="18"/>
- * </a>
- * <a
- * href="https://david-dm.org/Xotic750/is-finite-x#info=devDependencies"
- * title="devDependency status">
- * <img src="https://david-dm.org/Xotic750/is-finite-x/dev-status.svg"
- * alt="devDependency status" height="18"/>
- * </a>
- * <a href="https://badge.fury.io/js/is-finite-x" title="npm version">
- * <img src="https://badge.fury.io/js/is-finite-x.svg"
- * alt="npm version" height="18">
- * </a>
- *
- * ES6-compliant shim for Number.isFinite.
- *
- * Requires ES3 or above.
- *
+ * @file ES6-compliant shim for Number.isFinite.
  * @see {@link http://www.ecma-international.org/ecma-262/6.0/#sec-number.isfinite|20.1.2.2 Number.isFinite ( number )}
- *
- * @version 1.2.0
+ * @version 1.3.0
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
