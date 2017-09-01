@@ -21,8 +21,6 @@ if (typeof module === 'object' && module.exports) {
   numIsFinite = returnExports;
 }
 
-var ifFunctionsHaveNamesIt = function foo() {}.name === 'foo' ? it : xit;
-
 var integers = [
   5295,
   -5295,
@@ -92,12 +90,8 @@ var expectTrue = function (item) {
 };
 
 describe('numIsFinite', function () {
-  ifFunctionsHaveNamesIt('has the right name', function () {
-    expect(numIsFinite.name).toBe('isFinite');
-  });
-
-  it('has the right arity', function () {
-    expect(numIsFinite.length).toBe(1);
+  it('is a function', function () {
+    expect(typeof numIsFinite).toBe('function');
   });
 
   it('should work', function () {

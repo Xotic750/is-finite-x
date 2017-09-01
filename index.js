@@ -1,7 +1,7 @@
 /**
  * @file ES6-compliant shim for Number.isFinite.
  * @see {@link http://www.ecma-international.org/ecma-262/6.0/#sec-number.isfinite|20.1.2.2 Number.isFinite ( number )}
- * @version 2.0.0
+ * @version 3.0.0
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
@@ -10,23 +10,9 @@
 
 'use strict';
 
-var nativeNumberIsFinite = typeof Number.isFinite === 'function' && Number.isFinite;
-
-var $isFinite;
-if (nativeNumberIsFinite) {
-  try {
-    if (nativeNumberIsFinite(require('max-safe-integer')) && nativeNumberIsFinite(Infinity) === false) {
-      $isFinite = Number.isFinite;
-    }
-  } catch (ignore) {}
-}
-
-if (Boolean($isFinite) === false) {
-  var $isNaN = require('is-nan');
-  $isFinite = function isFinite(number) {
-    return typeof number === 'number' && $isNaN(number) === false && number !== Infinity && number !== -Infinity;
-  };
-}
+var numberIsNaN = require('is-nan-x');
+var inf = 1 / 0;
+var negInf = 1 / -0;
 
 /**
  * This method determines whether the passed value is a finite number.
@@ -47,4 +33,6 @@ if (Boolean($isFinite) === false) {
  *                         // global isFinite('0')
  * numIsFinite(null);      // false, would've been true with
  */
-module.exports = $isFinite;
+module.exports = function isFinite(number) {
+  return typeof number === 'number' && numberIsNaN(number) === false && number !== inf && number !== negInf;
+};

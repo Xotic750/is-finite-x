@@ -24,16 +24,16 @@
 ES6-compliant shim for Number.isFinite.
 
 **See**: [20.1.2.2 Number.isFinite ( number )](http://www.ecma-international.org/ecma-262/6.0/#sec-number.isfinite)  
-**Version**: 2.0.0  
+**Version**: 3.0.0  
 **Author**: Xotic750 <Xotic750@gmail.com>  
 **License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
 **Copyright**: Xotic750  
 <a name="exp_module_is-finite-x--module.exports"></a>
 
-### `module.exports` ⇒ <code>boolean</code> ⏏
+### `module.exports(number)` ⇒ <code>boolean</code> ⏏
 This method determines whether the passed value is a finite number.
 
-**Kind**: Exported member  
+**Kind**: Exported function  
 **Returns**: <code>boolean</code> - A Boolean indicating whether or not the given value is a finite number.  
 
 | Param | Type | Description |
