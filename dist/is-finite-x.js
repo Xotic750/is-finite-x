@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017-present",
-  "date": "2019-07-12T12:43:40.732Z",
+  "date": "2019-07-13T01:57:19.006Z",
   "describe": "",
   "description": "ES6-compliant shim for Number.isFinite.",
   "file": "is-finite-x.js",
   "hash": "e2a2bd9a3d02a269dd6c",
   "license": "MIT",
-  "version": "4.0.1"
+  "version": "4.0.2"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
