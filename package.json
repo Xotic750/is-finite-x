@@ -1,6 +1,6 @@
 {
   "name": "is-finite-x",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "description": "ES6-compliant shim for Number.isFinite.",
   "homepage": "https://github.com/Xotic750/is-finite-x",
   "author": {
@@ -49,8 +49,8 @@
     "url": "https://github.com/Xotic750/is-finite-x/issues"
   },
   "dependencies": {
-    "infinity-x": "^2.0.4",
-    "is-nan-x": "^2.0.7"
+    "infinity-x": "^2.0.6",
+    "is-nan-x": "^2.0.8"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
