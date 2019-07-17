@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017-present",
-  "date": "2019-07-17T13:08:21.357Z",
+  "date": "2019-07-17T15:18:01.747Z",
   "describe": "",
   "description": "ES6-compliant shim for Number.isFinite.",
   "file": "is-finite-x.js",
-  "hash": "1c9612ac2a1ad0ea552f",
+  "hash": "dd01d098f3280e358076",
   "license": "MIT",
-  "version": "4.0.9"
+  "version": "4.0.10"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -139,10 +139,12 @@ __webpack_require__.r(__webpack_exports__);
  * @returns {boolean} `true` if the given value is NaN and its type is Number;
  *  otherwise, `false`.
  */
-function is_nan_x_esm_isNaN(value) {
+var is_nan_x_esm_isNaN = function isNaN(value) {
   /* eslint-disable-next-line no-self-compare */
   return value !== value;
-}
+};
+
+/* harmony default export */ var is_nan_x_esm = (is_nan_x_esm_isNaN);
 
 
 // CONCATENATED MODULE: ./node_modules/infinity-x/dist/infinity-x.esm.js
@@ -165,7 +167,7 @@ function is_nan_x_esm_isNaN(value) {
  */
 
 var is_finite_x_esm_isFinite = function isFinite(number) {
-  return typeof number === 'number' && is_nan_x_esm_isNaN(number) === false && number !== infinity_x_esm && number !== -infinity_x_esm;
+  return typeof number === 'number' && is_nan_x_esm(number) === false && number !== infinity_x_esm && number !== -infinity_x_esm;
 };
 
 /* harmony default export */ var is_finite_x_esm = __webpack_exports__["default"] = (is_finite_x_esm_isFinite);
