@@ -7,6 +7,8 @@ import INFINITY from 'infinity-x';
  * @param {*} [number] - The value to be tested for finiteness.
  * @returns {boolean} A Boolean indicating whether or not the given value is a finite number.
  */
-export default function isFinite(number) {
+const isFinite = function isFinite(number) {
   return typeof number === 'number' && numberIsNaN(number) === false && number !== INFINITY && number !== -INFINITY;
-}
+};
+
+export default isFinite;

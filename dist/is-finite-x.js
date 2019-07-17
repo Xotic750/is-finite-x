@@ -2,11 +2,11 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017-present",
-  "date": "2019-07-16T21:05:00.544Z",
+  "date": "2019-07-17T13:08:21.357Z",
   "describe": "",
   "description": "ES6-compliant shim for Number.isFinite.",
   "file": "is-finite-x.js",
-  "hash": "e2a2bd9a3d02a269dd6c",
+  "hash": "1c9612ac2a1ad0ea552f",
   "license": "MIT",
   "version": "4.0.9"
 }
@@ -155,7 +155,6 @@ function is_nan_x_esm_isNaN(value) {
 
 
 // CONCATENATED MODULE: ./dist/is-finite-x.esm.js
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return is_finite_x_esm_isFinite; });
 
 
 /**
@@ -165,9 +164,11 @@ function is_nan_x_esm_isNaN(value) {
  * @returns {boolean} A Boolean indicating whether or not the given value is a finite number.
  */
 
-function is_finite_x_esm_isFinite(number) {
+var is_finite_x_esm_isFinite = function isFinite(number) {
   return typeof number === 'number' && is_nan_x_esm_isNaN(number) === false && number !== infinity_x_esm && number !== -infinity_x_esm;
-}
+};
+
+/* harmony default export */ var is_finite_x_esm = __webpack_exports__["default"] = (is_finite_x_esm_isFinite);
 
 
 

@@ -7,8 +7,10 @@ import INFINITY from 'infinity-x';
  * @returns {boolean} A Boolean indicating whether or not the given value is a finite number.
  */
 
-export default function isFinite(number) {
+var isFinite = function isFinite(number) {
   return typeof number === 'number' && numberIsNaN(number) === false && number !== INFINITY && number !== -INFINITY;
-}
+};
+
+export default isFinite;
 
 //# sourceMappingURL=is-finite-x.esm.js.map
