@@ -1,6 +1,6 @@
 {
   "name": "is-finite-x",
-  "version": "4.0.19",
+  "version": "4.0.20",
   "description": "ES6-compliant shim for Number.isFinite.",
   "homepage": "https://github.com/Xotic750/is-finite-x",
   "author": {
@@ -22,6 +22,7 @@
   ],
   "module": "dist/is-finite-x.esm.js",
   "main": "dist/is-finite-x.js",
+  "jsdelivr": "dist/is-finite-x.min.js",
   "scripts": {
     "build:esm": "mkdirp dist && babel -s true --env-name esm src/is-finite-x.js -o dist/is-finite-x.esm.js",
     "build:base": "webpack --bail --progress --profile --colors",
@@ -49,8 +50,8 @@
     "url": "https://github.com/Xotic750/is-finite-x/issues"
   },
   "dependencies": {
-    "infinity-x": "^2.0.20",
-    "is-nan-x": "^2.0.22"
+    "infinity-x": "^2.0.21",
+    "is-nan-x": "^2.0.23"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
