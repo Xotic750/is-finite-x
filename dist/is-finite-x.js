@@ -2,7 +2,7 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017-present",
-  "date": "2019-07-29T21:42:23.170Z",
+  "date": "2019-07-31T15:38:47.599Z",
   "describe": "",
   "description": "ES6-compliant shim for Number.isFinite.",
   "file": "is-finite-x.js",
