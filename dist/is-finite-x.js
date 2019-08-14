@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017-present",
-  "date": "2019-08-13T12:50:08.127Z",
+  "date": "2019-08-14T13:43:16.603Z",
   "describe": "",
   "description": "ES6-compliant shim for Number.isFinite.",
   "file": "is-finite-x.js",
-  "hash": "cc519d056f75d0c13c91",
+  "hash": "db536c968c33f836cb9b",
   "license": "MIT",
-  "version": "4.0.26"
+  "version": "4.1.0"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -182,7 +182,8 @@ var is_nan_x_esm_isNaN = function isNaN(value) {
  *
  * @type number
  */
-/* harmony default export */ var infinity_x_esm = (1 / 0);
+var constantInfinity = 1 / 0;
+/* harmony default export */ var infinity_x_esm = (constantInfinity);
 
 
 // CONCATENATED MODULE: ./dist/is-finite-x.esm.js
